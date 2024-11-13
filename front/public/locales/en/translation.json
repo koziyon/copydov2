@@ -1,0 +1,101 @@
+{
+    "welcome_message": "Welcome to Copydo",
+    "home_page_description": "This is the home page of your document management application.",
+    "manage_documents_info": "Manage your documents, search for services, and streamline your workflow with ease.",
+    "learn_more": "Learn more about us",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "support": "Support",
+    "search": "Search",
+    "search_placeholder": "Search services or providers...",
+    "login": "Login",
+    "signup": "Sign Up",
+    "intro_description": "Streamline your document management effortlessly. Discover a seamless way to handle documents, access essential services, and improve productivity.",
+    "our_services": "Our Services",
+    "copy_services": "Copy Services",
+    "copy_services_description": "High-quality document copying and printing services.",
+    "notary_services": "Notary Services",
+    "notary_services_description": "Certified notary services for official documents.",
+    "translation_services": "Translation Services",
+    "translation_services_description": "Professional translation for your documents.",
+    "form_filling_services": "Automatic Form Filling",
+    "form_filling_services_description": "Quickly and easily fill in your documents with our automatic form-filling feature. Save time by avoiding manual data entry.",
+    "ocr_services": "OCR Services (Coming Soon)",
+    "ocr_services_description": "Optical Character Recognition (OCR) for business needs, coming soon.",
+    "why_choose_us": "Why Choose Copydo?",
+    "benefit_1": "Save time and reduce errors with automated document handling.",
+    "benefit_2": "Wide range of services from trusted providers.",
+    "benefit_3": "User-friendly platform accessible from any device.",
+    "get_started_title": "Ready to get started?",
+    "get_started_description": "Sign up today and streamline your document management.",
+    "get_started": "Get Started",
+    "register": "Sign Up",
+    "validation": {
+      "email": {
+        "invalid": "Invalid email format",
+        "required": "Email is required"
+      },
+      "password": {
+        "min": "Password must be at least 6 characters",
+        "pattern": "Password can only contain Latin letters, numbers, and symbols",
+        "required": "Password is required",
+        "match": "Passwords must match"
+      },
+      "first_name": {
+        "required": "First name is required"
+      },
+      "last_name": {
+        "required": "Last name is required"
+      },
+      "phone": {
+        "invalid": "Invalid phone number",
+        "required": "Phone number is required"
+      }
+    },
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "phone": "Phone Number",
+    "no_account": "Don't have an account?",
+    "already_have_account": "Already have an account?",
+    "welcome": "Welcome to CopyDo",
+    "manage_documents": "Manage your documents, find services, and streamline your workflow with ease.",
+    "discover_advantages": "Discover the advantages of CopyDo!",
+    "features": {
+      "feature_1": "Easily organize and access all your important documents.",
+      "feature_2": "Quickly find and connect with service providers.",
+      "feature_3": "Automate document filling to save time and reduce errors."
+    },
+    "login_welcome": "Welcome Back to CopyDo",
+    "login_info": "Sign in to access your documents and streamline your workflow.",
+    "login_features": {
+      "feature_1": "Access all your documents in one place.",
+      "feature_2": "Communicate with service providers directly.",
+      "feature_3": "Manage tasks efficiently and reduce errors."
+    },
+  "about_title": "About CopyDo",
+  "about_description": "CopyDo is an innovative platform for document management and interaction with service providers.",
+  "benefits_title": "Benefits",
+  "user_benefits_title": "For Users",
+  "user_benefits_description": "Get easy access to necessary documents, automate processes, and save time.",
+  "provider_benefits_title": "For Service Providers",
+  "provider_benefits_description": "Expand your client base and offer services online with platform support.",
+  "business_benefits_title": "For Businesses",
+  "business_benefits_description": "Manage tasks, increase process efficiency, and grow your business.",
+  "features_title": "Features",
+  "feature_form_filling_title": "Automatic Form Filling",
+  "feature_form_filling_description": "Fill routine documents quickly and accurately with automation.",
+  "feature_service_search_title": "Convenient Service Search",
+  "feature_service_search_description": "Easily find the services and providers you need to accomplish your tasks.",
+  "feature_online_services_title": "Online Service Access",
+  "feature_online_services_description": "Access necessary services online without leaving your home.",
+  "feature_time_saving_title": "Time Saving",
+  "feature_time_saving_description": "Accelerate processes to reduce the time spent on everyday tasks."
+}
+  
+  
+  

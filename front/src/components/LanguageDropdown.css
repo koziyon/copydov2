@@ -1,0 +1,58 @@
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #333;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.globe-icon {
+  font-size: 1.5rem; /* Увеличенный размер иконки */
+  margin-right: 8px;
+  color: #555555; /* Новый цвет иконки для лучшей видимости */
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 0.8rem;
+}
+
+.language-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.language-options button {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.language-options button:hover {
+  background-color: #f3f4f6;
+}

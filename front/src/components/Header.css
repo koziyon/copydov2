@@ -1,0 +1,250 @@
+/* Основные стили шапки */
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #4B5563;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.header-nav a:hover {
+  color: #059669;
+  border-bottom: 2px solid #059669;
+}
+
+/* Стили для активной страницы */
+.header-nav a.active {
+  color: #059669; /* Цвет текста для активной страницы */
+  font-weight: 700; /* Сделаем активную страницу более жирной */
+  border-bottom: 2px solid #059669; /* Подчеркивание для активной ссылки */
+}
+
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #059669;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+/* Навигация */
+.header-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #4B5563;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.header-nav a:hover {
+  color: #059669;
+  border-bottom: 2px solid #059669;
+}
+
+/* Поиск */
+.header-search {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+}
+
+.search-container input {
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  flex: 1;
+  background-color: transparent;
+  border-radius: 30px 0 0 30px;
+}
+
+.search-container button {
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #059669;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 0 30px 30px 0;
+}
+
+/* Эффекты при наведении */
+.search-container button:hover {
+  background-color: #047857;
+  transform: scale(1.05);
+}
+
+/* Вход и выбор языка */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-button {
+  text-decoration: none;
+  padding: 11px 30px;
+  background: #059669;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+  background-color: #047857;
+  transform: translateY(-2px);
+}
+
+.language-button {
+  background: #059669;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-button:hover {
+  background-color: #047857;
+  transform: translateY(-2px);
+}
+
+/* --- Адаптивные стили --- */
+
+/* Десктопы: все элементы на одной строке */
+@media (min-width: 1300px) {
+  .header-content {
+    flex-direction: row;
+  }
+
+  .header-search {
+    max-width: 500px;
+  }
+}
+
+/* Планшеты: шапка в две строки, поиск опускается в центр второй строки */
+@media (min-width: 768px) and (max-width: 1299px) {
+  .header-content {
+    display: grid;
+    grid-template-areas: 
+      "name nav actions"
+      "search search search";
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .project-name {
+    grid-area: name;
+    font-size: 1.6rem;
+  }
+
+  .header-nav {
+    grid-area: nav;
+    justify-content: center;
+  }
+
+  .header-search {
+    grid-area: search;
+    width: 100%;
+    max-width: 600px;
+    justify-self: center;
+    margin-top: 10px;
+  }
+
+  .header-actions {
+    grid-area: actions;
+    justify-content: flex-end;
+  }
+
+  .search-container button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Мобильные устройства: шапка в четыре строки, элементы центрируются */
+@media (max-width: 767px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  .header-search {
+    order: 3;
+    width: 100%;
+    margin: 10px 0;
+    max-width: 500px;
+  }
+
+  .search-container button {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+
+  .header-actions {
+    order: 4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .login-button, .language-button {
+    width: auto;
+    padding: 10px 20px;
+  }
+}

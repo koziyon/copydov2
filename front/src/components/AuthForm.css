@@ -1,0 +1,206 @@
+/* Основной контейнер для всего экрана с задним фоном */
+.full-page-container {
+    background: linear-gradient(135deg, #f3f4f6, #d1d5db);
+    min-height: calc(100vh - 175px); /* Высота экрана минус высота шапки */
+    padding-top: 70px; /* Отступ сверху для учета высоты шапки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Контейнер для содержимого страницы (суженный, центрированный) */
+  .auth-page-container {
+    display: flex;
+    max-width: 1200px; /* Максимальная ширина контента */
+    width: 100%;
+    gap: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 1023px) {
+    .auth-page-container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center; /* Центрирование содержимого */
+        text-align: center;
+    }
+  
+    .info-column {
+        order: 2;
+        padding: 20px;
+    }
+  
+    .auth-form-container {
+        order: 1;
+        width: 100%;
+        max-width: 450px; /* Максимальная ширина формы */
+        padding: 20px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 20px; /* Отступ сверху */
+    }
+}
+  
+  /* Адаптивный стиль для мобильных */
+  @media (max-width: 767px) {
+    .auth-page-container {
+      padding: 15px;
+      flex-direction: column;
+    }
+  
+    .info-column {
+      padding: 10px;
+      text-align: center;
+      order: 2;
+    }
+  
+    .auth-form-container {
+      order: 1;
+      padding: 15px;
+      max-width: 100%;
+      width: 100%;
+      box-shadow: none;
+      margin-top: 20px; /* Отступ сверху */
+    }
+  
+    .auth-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .auth-form input {
+      padding: 10px;
+    }
+  
+    .auth-form button {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .feature-list li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Стили для элементов */
+  .info-column {
+    flex: 2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+  }
+  
+  .info-column h2 {
+    font-size: 2rem;
+    color: #059669;
+    margin-bottom: 20px;
+  }
+  
+  .info-column p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .feature-list {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .feature-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .auth-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Отступ сверху */
+  }
+  
+  .auth-form-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .auth-form {
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .auth-form input {
+    padding: 12px;
+    width: 92%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .auth-form input:focus {
+    border-color: #059669;
+  }
+  
+  .auth-form button {
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #059669;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-form button:hover {
+    background-color: #047857;
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  
+  .auth-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .auth-link a {
+    color: #059669;
+    text-decoration: none;
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline;
+  }
+  
